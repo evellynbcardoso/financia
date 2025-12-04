@@ -17,7 +17,7 @@ if(isset($_SESSION['usuario_id'])){
 </head>
 <body>
     <h1>longin - Sistema Financeiro</h1>
-    <form action="autenticae" method="post">
+    <form action="autenticar.php" method="post">
         <div>
             <label for="email">E-mail:</label>
             <input type="email" name="email" id="email" required>
