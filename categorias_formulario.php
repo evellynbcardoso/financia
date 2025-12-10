@@ -59,9 +59,6 @@ if ($id_categoria) {
     </nav>
 
     <h2><?php echo $categoria ? 'Editar' : 'Nova'; ?> Categoria</h2>
-    <!-- <div>
-       <button type="submit">Nova Categoria</button>
-    </div> -->
     
     <form action="categorias_salvar.php" method="POST">
         <?php if ($categoria): ?>
