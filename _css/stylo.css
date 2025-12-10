@@ -17,7 +17,7 @@ body{
     border-radius: 20px;
     font-family: cursive;
     font-size: 20px;
-    background-color: rgb(87, 2, 214);
+    background-color: rgb(152, 67, 209);
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -34,12 +34,30 @@ body{
 }
 
 h1{
-    font-style: italic;
+    font-style: bold;
     font-family: 'Courier New', Courier, monospace;
+    text-align: left;
 }
 
 .mensagem{
     background-color: rgb(247, 50, 50);
     border-radius: 10px;
     border-color: black;
+}
+
+.categorias_listar, h1{
+    /* border: 2px solid black; */
+    /* padding: 80px; */
+    /* margin: 80px; */ 
+    /* background-color: rgb(152, 67, 209); */
+    border-radius: 20px;
+    font-family: cursive;
+    font-size: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    font-style: bold;
+    
 }
