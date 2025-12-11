@@ -1,63 +1,385 @@
+/* login */
+/* fonte e corpo */
 body{
-    background-color:rgb(202, 91, 243);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-family:'Poppins' sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg,#ffb3f4,#ffe9b8);
+  background-size: 300% 300%;
+  animation: gradientMove 8s ease infinite;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.login{
-   background: rgba(255, 255,255, 0.15);
-   padding: 60px;
-   margin: 40px;
-   border-radius: 25px;
-   border: 2px solid rgba(255, 255, 255, 0.3);
-   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-   width: 380px;
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-   
+/* efeito maigico no fundo  */
+@keyframes gradientMove{
+  0%{background-position: 0% 50%;}
+  50%{background-position: 50% 100%;}
+  100%{background-position: 0% 50%;}
 }
-
-.button{
-    background-color: rgb(141, 16, 209);
-    width: 100%;
-    height: 40px;
-    font-size: 18px;
-    border-radius: 10px;
-    font-family:'Poppins',sans-serif;
-    border: none;
-    color: white;
-    cursor: pointer;
-    transition: 0.35s;
+/* container */
+.containe{
+  background: rgba(255, 255, 255, 0.55);
+  padding: 35px;
+  width: 340px;
+  border-radius: 20px;
+  box-shadow: rgba(255, 170, 240, 0.5);
+  background: blur(8px);
+  text-align: center;
 }
-
+/* titulo */
 h1{
-    font-weight: 700;
-    font-size: 28px;
-    margin-bottom: 10px;
-    color: white;
+  color: #d12fc9;
+  font-size: 26px;
+  margin-bottom: 25px;
+  text-shadow: 2px 2px 0px #ffffff;
 }
-
-.mensagem{
-  background: white;
-  border-radius: 10px;
-  border: 1px solid rgb(180, 180, 180);
-  padding: 10px 15px;
+/* label e input */
+label{
+  color: #7c2fa0;
+  font-weight: 600;
+  display: block;
+  text-align:left ;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.input-group{
+  margin-bottom: 15px;
+}
+input{
   width: 100%;
-  font-size: 16px;
+  padding: 10px;
+  border-radius: 12px;
+  border: #fff;
+  transition: 0.3s;
+  font-size: 14px;
+}
+input:focus{
+  border-color: #ff6fe6;
+  box-shadow: 0 0 10px #ffbaf3;
   outline: none;
+}
+ /* botão */
+button{
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg,#f779ff,#ffaae4);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(255, 100, 220, 0.4);
   transition: 0.3s;
 }
+button:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(255, 100, 220, 0.6);
+}
+/* link do cadastro */
+p{
+  margin-top: 15px;
+  color: #7c2fa0;
+}
+p a{
+  color: #d551ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+p a:hover{
+  text-decoration: underline;
+}
 
-.categorias_listar, h1{
-  width: 100%;
+/* categoria listar */
+body{
+  margin: 0;
+  padding: 20px;
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg,#ffb3f4,#ffe9b8);
+  background-size: 300% 300%;
+  animation: fundoAnimado 10s ease infinite;
+  color: #6a1b9a;
+}
+/* fundo animado */
+@keyframes fundoAnimado{
+  0%{background-position: 0% 50%;}
+  50%{background-position: 50% 100%;}
+  100%{background-position: 0% 50%;}
+}
+/* titulos */
+h2,h3{
+  text-align: center;
+  font-weight: 700;
+  color: #d12fc9;
+  text-shadow: 2px 2px 0px white;
+}
+/* navbar */
+nav ul{
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  justify-content: center;
+  margin: 25px 0;
+}
+nav ul li a{
+  text-decoration: none;
+  background: linear-gradient(90deg,#f779ff,#ffaae4);
+  padding: 10px 20px;
+  padding: 15px;
   color: white;
   font-weight: bold;
-  font-size: 18px
+  box-shadow: 0 3px 6px rgba(255, 120, 220, 0.4);
+  transition: 0.3s;
+}
+nav ul li a:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(255, 120, 220, 0.6);
+}
+/* bem vindo */
+div p strong{
+  color: #7c2fa0;
+}
+/* botões */
+.btn-primary, .btn-success, .btn-danger{
+  border-radius: 12px;
+  padding: 8px 15px;
+  font-weight: bold;
+}
+/* cores estilo MLP */
+.btn-primary{
+  background: #ff7ce9;
+  border: none;
+}
+.btn-primary:hover{
+  background: #ff5edd;
+}
+.btn-success{
+  background: #9bf6ad;
+  border: none;
+}
+.btn-success:hover{
+  background: #74e987;
+}
+.btn-danger{
+  background:#ff9ba9;
+  border: none;
+}
+.btn-danger:hover{
+  background: #ff6d80;
+}
+/* tabela */
+table{
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 15px;
+  overflow: hidden;
+  backdrop-filter: blur(6px);
+}
+th{
+  background-color: #ffbaf3;
+  padding: 12px;
+  text-align: center;
+  color: #7c2fa0;
+  font-size: 16px;
+}
+td{
+  padding: 12px;
+  text-align: center;
+  color: #7c2fa0;
+  background: rgba(255, 255, 255, 0.8);
+}
+tr:nth-child(even) td{
+  background: rgba(255, 255, 255, 0.65);
+}
+tr:hover td{
+  background: #ffe1fb;
+}
+/* index */
+ h1{
+  text-align: center;
+  font-size: 32px;
+  color: #d12fc9;
+  text-shadow: 3px 3px 0px white;
+  margin-bottom: 10px;
+}
+/* bem vindo e botão e sair */
+.welcome{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: #7c2fa0;
+  font-size: 18px;
+}
+.btn-sair{
+  background: #ff86c8;
+  padding: 8px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+.btn-sair:hover{
+  background: #ff5fb3;
+}
+/* menu */
+.menu ul{
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  justify-content: center;
+  padding: 0;
+  margin: 30px 0;
+}
+.menu ul li a{
+  text-decoration: none;
+  background: linear-gradient(90ged,#f779ff,#ffaae4);
+  padding: 10px 22px;
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 3px 6px rgba(255, 120, 220, 0.4);
+  transition: 0.3s;
+}
+.menu ul li a:hover{
+  transform: translateY(-3px);
+}
+/* CARDS DE RESUMO FINANCEIRO  */
+.cards-resumo{
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 25px 0;
+}
+.card{
+  width: 180px;
+  padding: 15px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  box-shadow: 0 0 12px rgba(255, 140, 220, 0.4);
+}
+.card h3{
+  font-size: 20px;
+  color: #d12fc9;
+}
+.card p{
+  font-size: 22px;
+  color: #7c2fa0;
+  font-weight: bold;
+}
+.receita{border-left: 6px solid #9bf6ad;}
+.despesa{border-left: 6px solid #ff9ba9;}
+.saldo{border-left: 6px solid #a3c2ff;}
+/* tabela */
+.tabela-mlp{
+  width: 95%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+  border-radius: 12px;
+  overflow:hidden;
+  box-shadow: rgba(255, 140, 220, 0.4);
+}
+.tabela-mlp th{
+    background: #ffbaf3;
+    padding: 12px;
+    color: #7c2fa0;
+}
+.tabela-mlp td{
+    padding: 10px;
+    color: #7c2fa0;
+}
+.tabela-mlp tr:nth-child(even) td {
+    background: rgba(255,255,255,0.5);
+}
+
+.tabela-mlp tr:hover td {
+    background: #ffe1fb;
+} 
+/* botão principal */
+.btn-principal{
+  display: inline-block;
+  background: #ff86c8;
+  padding: 10px 20px;
+  border-radius: 12px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn-principal:hover{
+  background: #ff5fb3;
+}
+.center{
+  text-align: center;
+} 
+/* registrar */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135ged, #8e44ad, #3498db);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+/* titulo */
+h1{
+  margin-bottom: 10px;
+  font-size: 32px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+h2{
+  margin-bottom: 20px;
+}
+/* formulario */
+form{
+  background: rgba(255, 255, 255, 0.15);
+  padding: 30px;
+  border-radius: 15px;
+  width: 320pz;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+/* blocos do formulario */
+form div{
+  margin-bottom: 15px;
+}
+/* labels */
+label{
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+/* campos */
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+/* botão */
+button{
+   width: 100%;
+  padding: 12px;
+  background: #2ecc71;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
 }

@@ -39,9 +39,13 @@ if ($id_categoria) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categorias - Sistema Financeiro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+    crossorigin="anonymous">
     <link rel="stylesheet" href="_css/stylo.css">
 </head>
-<body>
+<body> 
+    <?php include 'navbar.php'?>
     <h1>Sistema Financeiro</h1>
      <div>
         <p>Bem-vindo, <strong> <?php echo $usuario_nome ?> </strong></p>
@@ -86,5 +90,9 @@ if ($id_categoria) {
             <a href="categorias_listar.php">Cancelar</a>
         </div>
     </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+    crossorigin="anonymous"></script>
 </body>
 </html>

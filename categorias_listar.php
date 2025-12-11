@@ -33,6 +33,7 @@ $categorias = $stmt->fetchAll();
 </head>
 
 <body>
+    <?php include 'navbar.php'?>
     <h2>Sistema Financeiro</h2>
     <div>
         <p>Bem-vindo, <strong> <?php echo $usuario_nome ?> </strong></p>
@@ -84,7 +85,8 @@ $categorias = $stmt->fetchAll();
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
 
 </body>
 
